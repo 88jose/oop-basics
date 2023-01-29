@@ -22,7 +22,7 @@
         <section class="card-area">
             <!-- Card: Ramon Bilbao -->
             <?php
-                $RBilbao = new Stock("Ramon Bilbao", "Spain", "Rioja", "Crianza 2018", 8.90, "Red", 5);
+                $RBilbao = new Stock("Ramon Bilbao", "Spain", "Rioja", "Crianza 2018", 8.91, "Red", 5);
             ?>
             <section class="card-section">
                 <div class="card">
@@ -56,13 +56,16 @@
                                     echo "<span>Stock</span> {$RBilbao->getStock()}";
                                 ?>
                             </div>
+                            <div>
+                                <?php echo "<b>Price {$RBilbao->getPrice()} €</b>"; ?>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- Card: Habla -->
             <?php
-                $HSilencio = new Stock("Habla del Silencio", "Spain", "Extremadura", "Crianza 2021", 11.60, "Red", 0);
+                $HSilencio = new Stock("Habla del Silencio", "Spain", "Extremadura", "Crianza 2021", 11.62, "Red", 0);
             ?>
             <section class="card-section">
                 <div class="card">
@@ -95,6 +98,9 @@
                                     echo "<span>Denomination</span> {$HSilencio->getDenomination()} <br>";
                                     echo "<span>Stock</span> {$HSilencio->getStock()}";
                                 ?>
+                            </div>
+                            <div>
+                                <?php echo "<b>Price {$HSilencio->getPrice()} €</b>"; ?>
                             </div>
                         </div>
                     </div>
@@ -136,6 +142,9 @@
                                     echo "<span>Stock</span> {$EMoro->getStock()}";
                                 ?>
                             </div>
+                            <div>
+                                <?php echo "<b>Price {$EMoro->getPrice()} €</b>"; ?>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -151,7 +160,7 @@
         <section class="card-area">
             <!-- Card: Bera Vittorio -->
             <?php
-                $BVitorio = new Stock("Bera Vittorio", "Italy", "Vino da Tavola", "Arcese 2020", 15.00, "White", 0);
+                $BVitorio = new Stock("Bera Vittorio", "Italy", "Vino da Tavola", "Arcese 2020", 15.01, "White", 0);
             ?>
             <section class="card-section">
                 <div class="card">
@@ -184,6 +193,9 @@
                                     echo "<span>Denomination</span> {$BVitorio->getDenomination()} <br>";
                                     echo "<span>Stock</span> {$BVitorio->getStock()}";
                                 ?>
+                            </div>
+                            <div>
+                                <?php echo "<b>Price {$BVitorio->getPrice()} €</b>"; ?>
                             </div>
                         </div>
                     </div>
@@ -225,6 +237,9 @@
                                     echo "<span>Stock</span> {$JMeyer->getStock()}";
                                 ?>
                             </div>
+                            <div>
+                                <?php echo "<b>Price {$JMeyer->getPrice()} €</b>"; ?>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -264,6 +279,9 @@
                                     echo "<span>Denomination</span> {$PVerdejo->getDenomination()} <br>";
                                     echo "<span>Stock</span> {$PVerdejo->getStock()}";
                                 ?>
+                            </div>
+                            <div>
+                                <?php echo "<b>Price {$PVerdejo->getPrice()} €</b>"; ?>
                             </div>
                         </div>
                     </div>
