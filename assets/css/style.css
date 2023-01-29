@@ -1,0 +1,259 @@
+/* CSS reset */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap');
+
+body {
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+  position: relative;
+  padding: 0 50px;
+}
+
+.inside-page__heading { 
+  padding-bottom: 1rem; 
+  width: 100%;
+}
+
+.inside-page__heading,
+.card-front__text-view {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-top: .2rem;
+}
+.inside-page__heading--red,
+.card-front__text-view--red { 
+  color: black; 
+}
+
+.card-front__tp { 
+  color: #fafbfa; 
+  border: 1px solid #e1e1e1;
+}
+.color-red{
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: #C21E30;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.color-white{
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: #E7EECC;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.card-front__text-price {
+  font-size: 1.2rem;
+  margin-top: -.2rem;
+}
+
+.inside-page__text {
+  color: #333;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.header{
+  text-align: center;
+    padding: 50px;
+}
+
+.category-red{
+  margin: 0 0 0 auto;
+  background-color: #C21E30;
+  max-width: 150px;
+  padding: 8px;
+  text-align: center;
+  color: black;
+}
+
+.category-white{
+  margin: 0 0 0 auto;
+  background-color: #E7EECC;
+  max-width: 150px;
+  padding: 8px;
+  text-align: center;
+  color: black;
+}
+
+hr{
+    color: black;
+    padding: 1.5px;
+    background-color: black;
+    border: none;
+}
+
+.card-area {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-evenly;
+  padding: 3rem 20rem 3rem 20rem;
+}
+
+.card-section {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  height: 25rem;
+  position: relative;
+  transition: all 1s ease;
+  width: 15rem;
+}
+
+.flip-card {
+  height: 15rem;
+  perspective: 100rem;
+  position: absolute;
+  right: 0;
+  transition: all 1s ease;
+  visibility: hidden;
+  width: 15rem;
+  z-index: 100;
+}
+
+.flip-card > * {
+  visibility: visible;
+}
+
+.flip-card__container {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  width: 100%;
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card-front {
+  background-color: #fafbfa;
+  height: 25rem;
+  width: 15rem;
+}
+
+.card-front__tp {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  justify-content: center;
+  padding: .75rem;
+}
+
+.card-front__tp--red,
+.card-front__tp--white {
+  background-color: white;
+  color:black;
+}
+
+.card-back {
+  background-color: #fafbfa;
+  transform: rotateY(180deg);
+}
+
+img {
+  height: auto;
+  width: 100%;
+  border-top: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.logo img{
+  width:150px;
+  border:none;
+  margin: 20px 0 50px 0;
+}
+
+.inside-page {
+  background-color: #fafbfa;
+  box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0,0,0,0.25);
+  height: 100%;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  transition: all 1s ease;
+  width: 15rem;
+  z-index: 1;
+  border: 1px solid #e1e1e1;
+}
+
+.inside-page__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  text-align: center; 
+  width: 100%;
+}
+
+.infoTechRed,
+.infoTechWhite{
+    text-align: initial;
+    font-size: 0.85rem;
+}
+
+.infoTechRed span{
+    font-weight: 600;
+    color: #C21E30;
+}
+.infoTechWhite span{
+  font-weight: 600;
+  color: #c6d58f;
+}
+
+.footer{
+  margin-top: 100px;
+  padding: 20px 0;
+}
+/* Functionality ====================================*/
+
+.card:hover {
+  width: 30rem;
+}
+
+.card:hover .flip-card__container {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .inside-page {
+  box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
+}
