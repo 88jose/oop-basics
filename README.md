@@ -25,8 +25,6 @@ The requirements consist of:
 
 ![This is an image](assets/img/captura-oop.png)    
 
-[![Alt text](https://wuweijob.net/wp-content/uploads/2023/01/oopBaic.mp4)]
-
 ### Prerequirements 📋
 
 XAMPP software installation
