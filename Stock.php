@@ -21,6 +21,10 @@
                 return "Out of stock";
             }
         }
+
+        function __destruct(){
+            echo "- DESTROYED : " . $this->strTitle . "<br>";
+        }
     }
 
 
