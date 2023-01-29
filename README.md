@@ -42,7 +42,7 @@ The requirements consist of:
 
     ⦁ This interface must have at least 2 methods.
 
-![This is an image](assets/img/captura-oop.png)    
+![This is an image](assets/img/captura-oop2.png)    
 
 ### Prerequirements 📋
 
