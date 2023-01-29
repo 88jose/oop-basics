@@ -25,7 +25,7 @@ The requirements consist of:
 
 ![This is an image](assets/img/captura-oop.png)    
 
-[![Alt text](assets/video/oopBaic.mp4)]
+[![Alt text](https://wuweijob.net/wp-content/uploads/2023/01/oopBaic.mp4)]
 
 ### Prerequirements 📋
 
